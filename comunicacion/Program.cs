@@ -25,7 +25,8 @@ namespace comunicacion
 
                 byte[] byData = new byte[1024];
                 var value = Escuchar.Receive(byData);
-                var resultado = System.Text.Encoding.ASCII.GetString(byData);
+                //var resultado = System.Text.Encoding.ASCII.GetString(byData);
+                var resultado = Encoding.UTF8.GetString(byData).Trim();
 
                 Console.WriteLine("Conectado con exito: " + resultado);
                 miPrimerSocket.Close();

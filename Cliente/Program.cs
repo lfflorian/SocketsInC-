@@ -24,7 +24,8 @@ namespace Cliente
             {
                 miPrimerSocket.Connect(miDireccion); // Conectamos               
                 Console.WriteLine("Conectado con exito");
-                byte[] byData = System.Text.Encoding.ASCII.GetBytes("Esto es un envío de datos al server");
+                byte[] byData = System.Text.Encoding.UTF8.GetBytes("Esto es un envío de datos al server");
+                
                 miPrimerSocket.Send(byData);
 
                 miPrimerSocket.Close();
@@ -36,6 +37,5 @@ namespace Cliente
             Console.WriteLine("Presione cualquier tecla para terminar");
             Console.ReadLine();
         }
-
     }
 }
