@@ -24,9 +24,18 @@ namespace Cliente
             {
                 miPrimerSocket.Connect(miDireccion); // Conectamos               
                 Console.WriteLine("Conectado con exito");
+                //Envío de datos
                 byte[] byData = System.Text.Encoding.UTF8.GetBytes("Esto es un envío de datos al server");
-                
                 miPrimerSocket.Send(byData);
+
+                //Espera a recibir datos
+                miPrimerSocket.Accept();
+                byte[] otroDAta = new byte[1024];
+                var value = miPrimerSocket.Receive(otroDAta);
+                var resultado = Encoding.UTF8.GetString(otroDAta);
+
+                //Escribe resultados recibidos
+                Console.WriteLine("Resultado: " + resultado);
 
                 miPrimerSocket.Close();
             }

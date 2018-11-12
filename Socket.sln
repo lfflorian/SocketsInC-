@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "comunicacion", "comunicacio
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cliente", "Cliente\Cliente.csproj", "{3D183735-F5B3-46C5-9030-850459F439FB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppInver", "ConsoleAppInver\ConsoleAppInver.csproj", "{D0BD7B3E-2F43-4200-8C11-27C2E69EA4DD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{3D183735-F5B3-46C5-9030-850459F439FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3D183735-F5B3-46C5-9030-850459F439FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3D183735-F5B3-46C5-9030-850459F439FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0BD7B3E-2F43-4200-8C11-27C2E69EA4DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0BD7B3E-2F43-4200-8C11-27C2E69EA4DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0BD7B3E-2F43-4200-8C11-27C2E69EA4DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0BD7B3E-2F43-4200-8C11-27C2E69EA4DD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
